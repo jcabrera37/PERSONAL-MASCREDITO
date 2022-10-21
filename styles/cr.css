@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+body{
+ min-height: 100vh;
+ display: flex;
+align-items: center;
+justify-content:right;
+background:rgb(20, 20, 20) ;
+
+
+}
+
+/*contenedor del formulario*/
+.container{
+
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+   /* background-color:aliceblue;*/
+/*sombra de la caja*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/*header del contenedor del formulario*/
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+/*contenedor pero que va en el formulario que contiene todos los datos*/
+.container form{
+    position: relative;
+    min-height: 490px;
+    /*background-color: aliceblue;*/
+}
+
+.container form .datos{
+margin-top: 10px; 
+
+}
+
+.container form .tittle{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgb(255, 255, 255);
+}
+
+
+.container form .fields{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   flex-wrap: wrap;
+    
+}
+
+
+
+
+/*inputs*/
+
+form .fields .input-fields{
+    display: flex;
+width: calc(100% / 2 - 15px);
+
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+
+
+
+form .fields .input-fields2{
+    display: flex;
+width: calc(100% / 4 - 15px);
+
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+
+
+.input-fields label{
+
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+.input-fields2 label{
+
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+}
+
+/*Estilos de los inputs*/
+.input-fields input{
+
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+
+    /*Color de la letra que va dentro del input*/
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 2px;
+    height: 42px;
+    margin: 8px 0;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+
+/*Estilos de los inputs de referencias personales*/
+.input-fields2 input{
+
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+
+    /*Color de la letra que va dentro del input*/
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 2px;
+    height: 42px;
+    margin: 8px 0;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+
+/*Fecha*/
+
+.input-fields input[type="date"]{
+    color: #ffffff;
+}
+
+
+/*Estilos de los select*/
+.input-fields select{
+
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 2px;
+    height: 42px;
+    margin: 8px 0;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+.input-fields textarea{
+
+    
+
+        font-size: 0.9rem;
+        min-width: 20rem;
+        max-width: 20rem;
+      
+        min-height: 15rem;
+        max-height: 15rem;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+    
+    
+        border: 2px solid;
+    border-radius: 4px;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+.container form button{
+    display: flex;
+    align-items: center;
+    
+    height: 45px;
+    max-width: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 25px 0px;
+    background-color: rgb(101, 14, 14);
+}
+
+
+@media (max-width: 750px){
+
+
+    form .fields .input-fields{
+        width: calc(100% / 1 - 15px);
+        }
+        form .fields .input-fields2{
+            width: calc(100% / 2 - 15px);
+            }
+   
+}
+
+@media (max-width: 550px){
+
+
+    form .fields .input-fields{
+        width: calc(100% / 1 - 15px);
+        }
+        form .fields .input-fields2{
+            width: calc(100% / 2 - 15px);
+            }
+  
+            form .primer-form{
+                margin-left: 100px;
+               }
+    
+               .container header{
+                margin-left: 100px;
+               }
+
+}

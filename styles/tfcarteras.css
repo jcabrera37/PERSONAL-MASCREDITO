@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   background:rgb(20, 20, 20) ;
+   
+   
+   }
+
+   .container{
+
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    /*background-color:rgb(39, 39, 39);*/
+/*sombra de la caja*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.container header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+
+/*
+.container form .datos{
+    margin-top: 10px;
+}  */
+
+.container form .tittle{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgb(255, 255, 255);
+}
+.container form{
+    position: relative;
+    min-height: 200px;
+    /*background-color: aliceblue;*/
+}
+
+
+
+.container form .fields{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   flex-wrap: wrap;
+    
+}
+
+
+
+
+/*inputs*/
+
+form .fields .input-fields{
+    display: flex;
+width: calc(100% / 3 - 15px);
+
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+form .fields .input-fields1{
+    display: flex;
+width: calc(100% / 1 - 15px);
+
+    flex-direction: column;
+    margin:auto;
+}
+form .fields .input-fields2{
+    display: flex;
+width: calc(100% / 1 - 15px);
+
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+.input-fields2 label{
+
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+}
+.input-fields label{
+
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+}
+.input-fields input{
+
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+
+    /*Color de la letra que va dentro del input*/
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 2px;
+    height: 42px;
+    margin: 8px 0;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+
+/*Estilos de los select*/
+.input-fields select{
+
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 2px;
+    height: 42px;
+    margin: 8px 0;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+
+.input-fields  .uBtn{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    /*line-height: 50px; */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 3, 3);
+    
+}
+
+
+/*Estilos de la tabla*/
+
+
+
+.table{
+
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 15px;
+    table-layout: fixed;
+    
+}
+
+.table tr{
+
+    background-color: rgb(39, 39, 39);
+    border: 1px solid #ddd;
+    
+}
+
+
+.table th, .table td{
+ font-size: 12px;
+ padding: 5px;
+ 
+text-align:justify;
+border: 1px solid #ddd;
+border-collapse: collapse;
+justify-items: center;
+    
+
+}
+
+.uBtn2{
+
+    width: 80px;
+    height: 40px;
+    max-width: 80px;
+    margin:auto;
+   
+
+
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    outline: none;
+    border-radius: 5px;
+  /*  line-height: 40px;*/
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 3, 3);
+    text-decoration: none;
+
+   
+}
+
+/*Encabezado de la tabla*/
+.table thead th{
+    background-color: #ddd;
+}
+
+/*Efecto paara cuando pase el mouse en la tabla cambie el color*/
+.table tbody tr:hover {
+    background-color: rgb(165, 55, 55);
+
+}
+
+.table tbody tr {
+    color: rgb(255, 255, 255);
+
+}
+
+/*Efecto paara cuando pase el mouse en el datp de la tabla cambie el color*/
+.table tbody td:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/*Esto quiere decir que a  todas las pantallas que tenga un maximo de 550 px vamos a modificarle las siguientes clases  */
+@media (max-width: 1012px){
+
+
+    .fields .input-fields{
+        width: calc(100% / 3 - 15px);
+        } 
+
+        .fields .input-fields1{
+            width: calc(100% / 1 - 15px);
+            }
+            .fields .input-fields2{
+                width: calc(100% / 1 - 15px);
+                }
+
+        .table{
+            border: 0px;
+           
+        }
+           .table thead {
+            display: none;
+           } 
+        .table tr{
+            
+            margin-bottom: 8px;
+            border-bottom: 4px solid #ddd;
+            display: block;
+        }
+
+        .table th, .table td{
+            font-size: 12px;
+        }
+
+        .table td {
+            display: block;
+            border-bottom: 1px solid #ddd;
+            text-align: right;
+        }
+
+        .table .uBtn2 {
+            display: block;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            align-items: flex-end;
+        }
+
+        .table td:last-child{
+            border-bottom: 0px;
+        }
+
+
+        .table td::before{
+            content: attr(data-label);
+            font-weight: bold;
+            float: left;
+            
+        }
+
+        
+        .container .primer-form{
+            margin-left: 65px;
+           }
+
+           form .primer-form{
+            margin-left: 65px;
+           }
+
+           .container header{
+            margin-left: 65px;
+           }
+
+           .datos-personales{
+            margin-left: 65px;
+           }
+
+
+}

@@ -1,0 +1,184 @@
+body{
+
+    padding: 5.5rem 0;
+    background: rgb(24, 24, 24);
+    
+}
+
+h1{
+    
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+
+    color: crimson;
+}
+
+
+
+form{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+    width: 100%;
+   
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+/*Estilo de los campos*/
+.field{
+    display: flex;
+
+    /*Direccion en columnas*/
+    flex-direction: column;
+
+   /*Ancho predeterminado*/ 
+
+    width: 25rem;
+
+    /*margen para que se separen los campos y no se queden muy pegados*/
+    margin: 0.5 rem 0;
+
+    
+
+}
+
+.fieldn{
+    display:flex;
+
+    /*Direccion en columnas*/
+    flex-direction: column;
+
+   /*Ancho predeterminado*/ 
+
+    width: 25rem;
+
+    /*margen para que se separen los campos y no se queden muy pegados*/
+    margin: 0.5 rem 0;
+
+    
+
+}
+
+.fieldn2{
+    display: flex;
+
+    flex-direction: row;
+}
+
+label{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color:aliceblue;
+}
+
+
+.field input{
+
+font-size: 0.9rem;
+
+height: 1.7rem;
+
+/*paara que no escriba  pegado al inicio*/
+padding-left: 0.5 rem;
+border: 2px solid;
+border-radius: 4px;
+
+
+}
+
+
+.field select{
+
+    font-size: 0.9rem;
+   width: 25rem;
+    height: 1.7rem;
+    padding-left: 0.5 rem;
+border: 2px solid;
+border-radius: 4px;
+
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 20rem;
+    margin: 0.75rem 0;
+}
+
+
+
+
+textarea{
+
+    font-size: 0.9rem;
+    min-width: 75%;
+    max-width: 75%;
+  
+    min-height: 6rem;
+    max-height: 6rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+
+
+    border: 2px solid;
+border-radius: 4px;
+}
+h5{
+
+    text-align: center;
+    color: aliceblue;
+}
+
+.vivienda{
+    
+   
+    color: aliceblue;
+}
+
+.genero{
+
+    color: aliceblue;
+}
+
+
+.daton{
+
+    color: aliceblue;
+}
+
+h2{
+    color: aliceblue;
+
+}
+
+.field2{
+   
+
+    display: flex;
+
+    /*Direccion en columnas*/
+    flex-direction: column;
+
+   /*Ancho predeterminado*/ 
+
+    width: 14rem;
+
+    /*margen para que se separen los campos y no se queden muy pegados*/
+    margin: 0.5 rem 0;
+
+    color:aliceblue;
+
+}
+
+h4{
+    color: aliceblue;
+}

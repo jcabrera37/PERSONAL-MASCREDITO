@@ -1,0 +1,19 @@
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+
+    flex: 40px;
+    padding: 20px;
+}
+
+
+section{
+
+    flex: 60%;
+}
