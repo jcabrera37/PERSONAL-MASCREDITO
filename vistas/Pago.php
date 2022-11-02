@@ -22,6 +22,7 @@ $sql = 'SELECT * FROM cliente WHERE dpi = "' . $palabra . '" OR primer_nombre = 
 $resultado = $conexion->query($sql);
 $user = $resultado->fetch();
 
+
 ?>
 
 <!DOCTYPE html>
@@ -99,6 +100,7 @@ $user = $resultado->fetch();
 
                     <div class="input-fields3">
                         <label for="">Numero de Prestamo</label>
+                        
                         <input type="text" name="id_solicitud" id="" placeholder="Ingrese el monto solicitado">
 
 

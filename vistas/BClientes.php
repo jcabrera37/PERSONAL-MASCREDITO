@@ -108,12 +108,13 @@ $user = $resultado->fetch();
                 </div>
                 <div class="input-fields3">
                     <label for="">Plan(cuotas)</label>
-                    <select name="plan_cuotas" id="">
+                    <input type="text" name="plan_cuotas" id="" placeholder="15, 21, 26 días">
+                    <!--  <select name="plan_cuotas" id="">
                         <option value="15">15 dias</option>
                         <option value="21">21 dias</option>
                         <option value="26">26 dias</option>
                         <option value="36">36 dias</option>
-                    </select>
+                    </select> -->
                 </div>
             </div>
         </div>
@@ -123,12 +124,13 @@ $user = $resultado->fetch();
             <div class="fields">
             <div class="input-fields3">
                     <label for="">Interes</label>
-                    <select name="interes" id="">
+                    <input type="text" name="interes" id="" placeholder="20%, 26% ...">
+                    <!--  <select name="interes" id="">
                         <option value="20">20%</option>
                         <option value="26">26%</option>
                         <option value="30">30%</option>
                         <option value="44">44%</option>
-                    </select>
+                    </select> -->
                 </div>
             </div>
         </div>
