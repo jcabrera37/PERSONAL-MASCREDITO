@@ -112,6 +112,9 @@ if(isset($_POST['nombre']) ){
                             <?php } else { ?>
                                 <option value="36">36 dias</option>    
                             <?php } ?>
+                            <?php } else { ?>
+                                <option value="48">48 dias</option>    
+                            <?php } ?>
 
                         </select>
                     </div>
