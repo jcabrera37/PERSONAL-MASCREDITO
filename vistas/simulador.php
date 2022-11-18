@@ -7,17 +7,23 @@ $cuotas = null;
 $nombre = null;
 $direccion = null;
 $telefono = null;
-$interes = null; 
+$interes = 0; 
 $monto = null; 
 $montoI = null;
 $fecha_actual = date("d-m-Y"); 
+
 
 if(isset($_POST['nombre']) ){
     if($_POST['cuotas'] != "1"){
         $monto = floatval($_POST['monto']);
         $cuotas = floatval($_POST['cuotas']);
 
-        if($_POST['cuotas'] == 15){
+        $interes = 0;
+
+        if($_POST['cuotas'] < 15){
+            $interes = 0.10;
+        }
+        else if($_POST['cuotas'] == 15){
             $interes = 0.20;
         }else if($_POST['cuotas'] == 21){
             $interes = 0.26;
@@ -25,6 +31,8 @@ if(isset($_POST['nombre']) ){
             $interes = 0.30;
         }else if($_POST['cuotas'] == 36){
             $interes = 0.44;
+        }else {
+            $interes = 0.50;
         }
 
 
@@ -39,7 +47,7 @@ if(isset($_POST['nombre']) ){
     $nombre = "";
     $direccion = "";
     $telefono = "";
-    $interes = ""; 
+    $interes = 0; 
     $monto = ""; 
     $montoI = 0;
 }
@@ -87,36 +95,7 @@ if(isset($_POST['nombre']) ){
         
                     <div class="input-fields">
                         <label for="">Cuotas(plan)</label>
-                        <select name="cuotas" id="" required>
-                            
-                            <?php if($cuotas == 15){ ?>
-                                <option value="15" selected>15 dias</option>
-                            <?php } else { ?>
-                                <option value="15">15 dias</option>    
-                            <?php } ?>
-
-                            <?php if($cuotas == 21){ ?>
-                                <option value="21" selected>21 dias</option>
-                            <?php } else { ?>
-                                <option value="21">21 dias</option>    
-                            <?php } ?>   
-
-                            <?php if($cuotas == 26){ ?>
-                                <option value="26" selected>26 dias</option>
-                            <?php } else { ?>
-                                <option value="26">26 dias</option>    
-                            <?php } ?>
-
-                            <?php if($cuotas == 36){ ?>
-                                <option value="36" selected>36 dias</option>
-                            <?php } else { ?>
-                                <option value="36">36 dias</option>    
-                            <?php } ?>
-                            <?php } else { ?>
-                                <option value="48">48 dias</option>    
-                            <?php } ?>
-
-                        </select>
+                        <input type="text" name="cuotas"  placeholder="Cuotas (Días)" > 
                     </div>
                 </div>
             </div>

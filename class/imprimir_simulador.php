@@ -17,6 +17,9 @@ if(isset($_GET['nombre']) ){
         $monto = floatval($_GET['monto']);
         $cuotas = floatval($_GET['cuotas']);
 
+        if($_GET['cuotas'] <= 14){
+            $interes = 0.10;
+        }
         if($_GET['cuotas'] == 15){
             $interes = 0.20;
         }else if($_GET['cuotas'] == 21){
@@ -25,7 +28,10 @@ if(isset($_GET['nombre']) ){
             $interes = 0.30;
         }else if($_GET['cuotas'] == 36){
             $interes = 0.44;
+        }else {
+            $interes = 0.50;
         }
+    
 
 
         $nombre = $_GET['nombre'];

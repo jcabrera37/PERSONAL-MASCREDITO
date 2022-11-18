@@ -1,0 +1,28 @@
+<select name="cuotas" id="" required>
+                            
+                            <?php if($cuotas == 15){ ?>
+                                <option value="15" selected>15 dias</option>
+                            <?php } else { ?>
+                                <option value="15">15 dias</option>    
+                            <?php } ?>
+
+                            <?php if($cuotas == 21){ ?>
+                                <option value="21" selected>21 dias</option>
+                            <?php } else { ?>
+                                <option value="21">21 dias</option>    
+                            <?php } ?>   
+
+                            <?php if($cuotas == 26){ ?>
+                                <option value="26" selected>26 dias</option>
+                            <?php } else { ?>
+                                <option value="26">26 dias</option>    
+                            <?php } ?>
+
+                            <?php if($cuotas == 36){ ?>
+                                <option value="36" selected>36 dias</option>
+                            <?php } else { ?>
+                                <option value="36">36 dias</option>    
+                            <?php } ?>
+                            
+
+                        </select>
